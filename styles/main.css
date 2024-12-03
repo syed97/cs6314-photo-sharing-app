@@ -1,0 +1,28 @@
+/**
+ * CSS for the Project 5 main page.
+ *
+ * Since CSS uses a global name space for classes we should use class names
+ * starting with "main-" here.
+ */
+
+.main-topbar-buffer {
+  margin-top: 70px;
+}
+
+/* .main-grid-item{
+  height: calc(100vh - 64px);
+  padding: 10px;
+} */
+
+.main-grid-item {
+  height: 100%;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  overflow: auto; /* Handle overflowing content */
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+}

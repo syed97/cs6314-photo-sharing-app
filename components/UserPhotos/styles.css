@@ -1,0 +1,87 @@
+/* styles.css */
+
+.photo-main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto, serif;
+}
+
+.photo-item-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 550px;
+    /* padding-top: 20px; */
+}
+
+.photo-item-div img{
+    width: 500px;
+    height: auto;
+}
+
+.photo-creation-date-div {
+    width: 500px;
+    text-align: center;
+}
+
+.new-comment-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 480px;
+}
+
+.mentions {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    /* width: 100%; */
+    width: 460px;
+    min-height: 40px;
+    line-height: 1.4;
+}
+
+.mentions__highlighter {
+overflow: hidden;
+}
+
+.mentions__input {
+border: none;
+outline: none;
+}
+
+
+  /* The dropdown container */
+.mentions__suggestions {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 250px;
+    overflow-y: auto;
+    z-index: 10;
+    margin-top: 4px;
+}
+
+/* Individual suggestion items */
+.mentions__suggestions__item {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Highlighted (hovered or keyboard-focused) suggestion */
+.mentions__suggestions__item--focused {
+    background-color: #7dbef7; /* Light blue background for focus */
+}
+
+/* Optional: Add subtle borders between items */
+.mentions__suggestions__item:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
